@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mypage_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/postdetail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/banner_mypage_line">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#99FFFFFF"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/myPage_profileup"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+                <TextView
+                    android:id="@+id/mypage_grade"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:background="#2be0d0"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/nanumsquare_aceb"
+                    android:text=""
+                    android:textColor="@color/com_facebook_button_background_color_focused"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/myapge_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/nanumsquare_aceb"
+                    android:textColor="#2be0d0"
+                    android:layout_marginTop="210dp"
+                    android:textSize="20dp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#77FFFFFF"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/mypage_ratingBar"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:numStars="5"
+                    android:padding="5dp"
+                    android:rating="0"
+                    android:stepSize="0.5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#55FFFFFF"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_link_mint"
+                        android:id="@+id/mypage_link_btn"/>
+
+                    <ImageButton
+                        android:id="@+id/mypage_grade_report"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_rating_mint" />
+
+                    <ImageButton
+                        android:id="@+id/mypage_recent_travel"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_place_recent_mint" />
+
+                    <ImageButton
+                        android:id="@+id/maypage_reviewbtn"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_review_mint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:layout_marginEnd="6dp"
+                            android:text="링크 목록"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:textSize="12dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:text="티어 이력"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:text="최근 본 여행지"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:layout_marginStart="6dp"
+                            android:text="나의 리뷰"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#33FFFFFF"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/maypage_btn_notice"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_softline_mint"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:gravity="center"
+                    android:text="트래블러 안내"
+                    android:textColor="@color/main"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/maypage_btn_edit"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/main"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/button_softline_mint"
+                    android:layout_marginTop="10dp"
+                    android:text="프로필 수정"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/maypage_btn_out"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/main"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/button_softline_mint"
+                    android:layout_marginTop="10dp"
+                    android:text="로그아웃"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/maypage_btn_delete"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/main"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/button_softline_mint"
+                    android:layout_marginTop="10dp"
+                    android:text="회원 탈퇴"
+                    android:fontFamily="@font/nanumsquare_acr"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/MyPage_framelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mainactivity.buttomNavigationView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:tag="@+tag/mypage_fragment"></FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

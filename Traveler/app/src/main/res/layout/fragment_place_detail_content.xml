@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="#222be0d0"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#222be0d0"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:paddingTop="10dp"
+                            android:text="예약/문의하기"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:paddingTop="10dp"
+                            android:text="주소"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:paddingTop="10dp"
+                            android:text="운영시간"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:paddingTop="10dp"
+                            android:text="입장료"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:paddingTop="10dp"
+                            android:text="주차가능 여부"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="#AAFFFFFF"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/content_tel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bar_background_white"
+                            android:fontFamily="@font/nanumsquare_aceb"
+                            android:text="000-000-000"
+                            android:textColor="#2be0d0"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:id="@+id/content_adrress"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="5dp"
+                            android:text="주소 들어갈곳"
+                            android:textSize="15dp" />
+
+                        <Button
+                            android:id="@+id/content_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_alignBottom="@+id/content_adrress"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginLeft="50dp"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:text="위치보기"
+                            android:textColor="@color/main"
+                            android:textSize="12dp"
+                            android:background="@drawable/button_softline_mint" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:id="@+id/content_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="5dp"
+                            android:text="운영시간: "
+                            android:textSize="15dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:id="@+id/content_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="5dp"
+                            android:text="입장료: "
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:id="@+id/content_park"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="5dp"
+                            android:text="주차가능 여부"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

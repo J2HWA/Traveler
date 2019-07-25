@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context=".PaldoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+        android:id="@+id/gangwondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="73dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/gangwondo"
+        app:layout_constraintBottom_toBottomOf="@+id/chungcheongbookdo"
+        app:layout_constraintStart_toStartOf="@+id/sudo" />
+
+    <ImageButton
+        android:id="@+id/gyungsangbookdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/gyungsangbookdo"
+        app:layout_constraintStart_toStartOf="@+id/chungcheongbookdo"
+        app:layout_constraintTop_toTopOf="@+id/chungcheongbookdo" />
+
+    <ImageButton
+        android:id="@+id/gyungsangnamdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/gyungsangnamdo"
+        app:layout_constraintStart_toStartOf="@+id/chungcheongbookdo"
+        app:layout_constraintTop_toBottomOf="@+id/chungcheongbookdo" />
+
+    <ImageButton
+        android:id="@+id/sudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="65dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sudo"
+        app:layout_constraintBottom_toBottomOf="@+id/chungcheongbookdo"
+        app:layout_constraintEnd_toEndOf="@+id/chungcheongbookdo" />
+
+    <ImageButton
+        android:id="@+id/chungcheongbookdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/chungcheongbookdo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/chungcheongnamdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="57dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/chungcheongnamdo"
+        app:layout_constraintEnd_toEndOf="@+id/chungcheongbookdo"
+        app:layout_constraintTop_toTopOf="@+id/chungcheongbookdo" />
+
+    <ImageButton
+        android:id="@+id/jeonranamdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jeonranamdo"
+        app:layout_constraintEnd_toEndOf="@+id/chungcheongbookdo"
+        app:layout_constraintTop_toBottomOf="@+id/chungcheongbookdo" />
+
+    <ImageButton
+        android:id="@+id/jeonrabookdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="42dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jeonrabookdo"
+        app:layout_constraintEnd_toEndOf="@+id/chungcheongbookdo"
+        app:layout_constraintTop_toTopOf="@+id/chungcheongbookdo" />
+
+    <ImageButton
+        android:id="@+id/jejudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jejudo"
+        app:layout_constraintStart_toStartOf="@+id/jeonranamdo"
+        app:layout_constraintTop_toBottomOf="@+id/jeonranamdo" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/banner_mypage_profileedit_line"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_profileup"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/profileeidt_name_edit"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bar_background_login"
+            android:hint="닉네임"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/profileeidt_sns_edit"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bar_background_login"
+            android:hint="SNS 주소"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/prfileedit_btn_change"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_mypage_profiledit"
+            android:layout_marginTop="30dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

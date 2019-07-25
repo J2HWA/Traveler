@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_text"
+        android:title="텍스트모드"
+        android:icon="@drawable/baseline_text_rotation_none_black_18dp"
+        app:showAsAction="ifRoom" />
+
+</menu>

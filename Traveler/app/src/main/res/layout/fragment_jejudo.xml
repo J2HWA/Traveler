@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".area.JejudoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+        android:id="@+id/jejudo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jejudo1"
+        app:layout_constraintEnd_toEndOf="@+id/jejudo2"
+        app:layout_constraintTop_toTopOf="@+id/jejudo2" />
+
+    <ImageButton
+        android:id="@+id/jejudo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jejudo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/jejudo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="18dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jejudo10"
+        app:layout_constraintBottom_toBottomOf="@+id/jejudo6"
+        app:layout_constraintStart_toStartOf="@+id/jejudo2" />
+
+    <!--    <ImageButton
+            android:id="@+id/jejudo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/jejudo4"
+            app:layout_constraintEnd_toStartOf="@+id/jejudo2"
+            app:layout_constraintTop_toBottomOf="@+id/jejudo2" />-->
+
+    <!--    <ImageButton
+            android:id="@+id/jejudo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/jejudo5"
+            app:layout_constraintEnd_toStartOf="@+id/jejudo2"
+            app:layout_constraintTop_toBottomOf="@+id/jejudo2" />-->
+
+    <ImageButton
+        android:id="@+id/jejudo6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jejudo6"
+        app:layout_constraintEnd_toEndOf="@+id/jejudo2"
+        app:layout_constraintTop_toTopOf="@+id/jejudo2" />
+
+    <!--<ImageButton
+        android:id="@+id/jejudo7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="68dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jejudo7"
+        app:layout_constraintStart_toStartOf="@+id/jejudo2"
+        app:layout_constraintTop_toTopOf="@+id/jejudo2" />
+
+    <ImageButton
+        android:id="@+id/jejudo8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jejudo8"
+        app:layout_constraintStart_toEndOf="@+id/jejudo2"
+        app:layout_constraintTop_toTopOf="@+id/jejudo2" />
+
+    <ImageButton
+        android:id="@+id/jejudo9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jejudo9"
+        app:layout_constraintStart_toEndOf="@+id/jejudo2"
+        app:layout_constraintTop_toTopOf="@+id/jejudo2" />-->
+
+    <ImageButton
+        android:id="@+id/jejubtn"
+        android:text="뒤로가기"
+        android:background="@drawable/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/banner_main"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:gravity="center"
+            android:text="칭찬하기"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:text="상대방이 당신을 칭찬했습니다!"
+            android:textColor="@color/main"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:textColor="@color/main"
+            android:id="@+id/pagename"
+            android:textSize="16dp" />
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:background="#F4F4F4"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/myPage_profileup"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/mypage_grade"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="#2be0d0"
+                android:fontFamily="@font/nanumsquare_aceb"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text=""
+                android:textColor="@color/com_facebook_button_background_color_focused"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/myapge_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="115dp"
+                android:fontFamily="@font/nanumsquare_aceb"
+                android:textSize="20dp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="#F4F4F4"
+            android:orientation="vertical">
+
+            <RatingBar
+                android:id="@+id/mypage_ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:padding="5dp"
+                android:rating="0"
+                android:stepSize="0.5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonbackground_line_main_white_short"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:text="확인"
+            android:textColor="@color/main" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RatingBar
+            android:id="@+id/dialog_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:max="5"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/ok_button1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground_line_main_white_short"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:text="칭찬하기!!"
+            android:textColor="@color/main"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonbackground_line_main_white_short"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:text="취소"
+            android:textColor="@color/main" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

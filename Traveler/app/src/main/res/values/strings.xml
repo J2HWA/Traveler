@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Traveler</string>
+    <string name="facebook_app_id">2206208112966231</string>
+    <string name="fb_login_protocol_scheme">fb2206208112966231</string>
+    <string name="rc_color">splash_background</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:text="프로필 사진"
+        android:textColor="#2be0d0"
+        android:fontFamily="@font/nanumsquare_acb"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profileup1"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bookgongbaek" />
+
+        <!--  <ImageView
+              android:id="@+id/img_profileup2"
+              android:layout_width="match_parent"
+              android:layout_height="154dp"
+              android:layout_weight="1"
+              app:srcCompat="@drawable/mainicon" />
+
+          <ImageView
+              android:id="@+id/img_profileup3"
+              android:layout_width="match_parent"
+              android:layout_height="154dp"
+              android:layout_weight="1"
+              app:srcCompat="@drawable/mainicon" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bar_menu_background_gray_thin_full"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:text="프로필 사진은 반드시 얼굴이 선명히 보여야 합니다"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="320dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bar_menu_background_gray_full"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingTop="10dp"
+                            android:text="성별"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingTop="10dp"
+                            android:text="닉네임"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:paddingTop="10dp"
+                            android:text="나이"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingTop="10dp"
+                            android:text="나의 SNS"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_m"
+                                android:layout_width="120dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="남자" />
+
+                            <RadioButton
+                                android:id="@+id/radio_w"
+                                android:layout_width="120dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="여자" />
+                        </RadioGroup>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <EditText
+                            android:id="@+id/edit_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#FFFFFF"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="입력해주세요"
+                            android:inputType="textPersonName"
+                            android:paddingTop="10dp"
+                            android:textColor="#2be0d0"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <Spinner
+                            android:id="@+id/edit_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:entries="@array/age"
+                            android:fontFamily="@font/nanumsquare_acr" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <EditText
+                            android:id="@+id/edit_sns"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#FFFFFF"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="입력해주세요"
+                            android:inputType="textPersonName"
+                            android:paddingTop="10dp"
+                            android:textColor="#2be0d0"
+                            android:fontFamily="@font/nanumsquare_acr"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bar_menu_background_gray_full"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingTop="10dp"
+                            android:text="직업"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingTop="10dp"
+                            android:text="종교"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingTop="10dp"
+                            android:text="음주"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingTop="10dp"
+                            android:text="혈액형"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingTop="10dp"
+                            android:text="키"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingTop="10dp"
+                            android:text="사는 지역"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingTop="10dp"
+                            android:text="나의 소개"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/edit_job"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:entries="@array/job"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <Spinner
+                            android:id="@+id/edit_religion"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:entries="@array/religion"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <Spinner
+                            android:id="@+id/edit_drinking"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:entries="@array/drinking"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <Spinner
+                            android:id="@+id/edit_bloodtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:entries="@array/bloodtype"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <Spinner
+                            android:id="@+id/edit_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:entries="@array/height"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <Spinner
+                            android:id="@+id/edit_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:entries="@array/location"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+
+                        <EditText
+                            android:id="@+id/edit_introduce"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#FFFFFF"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="입력해주세요"
+                            android:inputType="textPersonName"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonbackground"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="회 원 가 입"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

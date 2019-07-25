@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.likeonline.travelmaker">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_traveler"
+        android:label="트래블러"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/app_icon_traveler"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".travelbook.TravelBookViewActivity"></activity>
+        <activity android:name=".travelbook.BookDetailActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB-eIsmsjR_pMmwzZUePB_YoOoKoOtzntw" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".place.PlaceDetailActivity" />
+        <activity android:name=".place.PlaceCreateActivity" />
+        <activity android:name=".place.PlaceActivity" />
+        <activity android:name=".board.PostDetailActivity" />
+        <activity android:name=".board.BoardActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginViewPager" />
+        <activity android:name=".chat.MessageActivity" />
+        <activity android:name=".SnsSignUpActivity" />
+        <activity android:name=".KakaoSignupActivity" />
+        <activity
+            android:name=".TravelMydlg"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich" />
+        <activity
+            android:name=".Travelyourdlg"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich" />
+        <activity
+            android:name=".TravelgoodActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich" />
+        <activity
+            android:name=".TravelreportActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich" />
+        <activity
+            android:name=".TravelCustomActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich" />
+        <activity android:name=".TravelreportActivity2"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich"></activity>
+        <activity
+            android:name=".reportDialog"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich" />
+        <activity
+            android:name=".TravelgoodActivity2"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            tools:targetApi="ice_cream_sandwich" />
+        <activity android:name=".KaKakLogin" />
+        <activity android:name=".FindPassword" />
+        <activity android:name=".fragment.ProfileEditeActivity" />
+        <activity android:name=".board.PostingActivity" />
+        <activity android:name=".KakaoUpActivity" />
+        <activity android:name=".review.review_WritingActivity" />
+        <activity android:name=".detailProfile.YourPageActivity" />
+        <activity android:name=".board.Board_SearchActivity" />
+        <activity android:name=".review.review_DetailActivity" />
+        <activity android:name=".review.my_reviewActivity" />
+        <activity android:name=".mypage.RecentTravel" />
+        <activity android:name=".mypage.gradeReportActivity" />
+        <activity android:name=".mypage.LinkActivity" />
+        <activity android:name=".mypage.TravelerNotice" />
+        <activity android:name=".detailProfile.you_gradeReportActivity" />
+        <activity
+            android:name="com.yongbeam.y_photopicker.util.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.yongbeam.y_photopicker.util.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zfdang.multiple_images_selector.ImagesSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity"
+            android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="0c8ad3cab4ef43db268589b314012f9a" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="default_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_color"
+            android:resource="@color/colorAccent" />
+    </application>
+
+</manifest>

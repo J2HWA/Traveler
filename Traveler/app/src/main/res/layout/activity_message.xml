@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    >
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/banner_main_line"
+        android:orientation="horizontal">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/messageActivity_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="채팅"
+                android:id="@+id/toolbar_title"
+                android:textColor="@color/main"
+                android:fontFamily="@font/nanumsquare_aceb"
+                android:textSize="20sp"
+                />
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/messageActivity_Relativelayout"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/messageActivity_editText">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messageActivity_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/messageActivity_editText"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            tools:ignore="NotSibling"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/messageActivity_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/messageActivity_recyclerview"
+        android:layout_marginTop="21dp"
+        android:layout_toLeftOf="@+id/messageActivity_button"
+        android:background="@drawable/buttonbackground_line_main_white"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/messageActivity_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonbackground_line_main_white_short"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/nanumsquare_acb"
+        android:textColor="@color/main"
+        android:text="전 송"></Button>
+
+
+</RelativeLayout>

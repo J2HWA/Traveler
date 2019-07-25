@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/yourpage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/banner_main_line"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        <TextView
+            android:id="@+id/yourpage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="상대방 닉네임이 표시되야함"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/yourpage_toolbar" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/myPage_profileup"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:id="@+id/mypage_grade"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="#2be0d0"
+                    android:fontFamily="@font/nanumsquare_aceb"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/com_facebook_button_background_color_focused"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/myapge_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="200dp"
+                    android:fontFamily="@font/nanumsquare_aceb"
+                    android:textSize="20dp" />
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="#AAFFFFFF"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/mypage_ratingBar"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:numStars="5"
+                    android:padding="5dp"
+                    android:rating="0"
+                    android:stepSize="0.5" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/youpage_btn_gradecareer"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_softline_mint"
+                android:fontFamily="@font/nanumsquare_acb"
+                android:text="신뢰지수 이력보기"
+                android:textColor="@color/main"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_marginBottom="5dp"
+                android:background="#AAFFFFFF"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingBottom="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/detail_profile_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:scrollbars="horizontal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="325dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#F9F9F9"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="#222be0d0"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="키"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="직업"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="사는지역"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="혈액형"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="음주여부"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="종교"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:text="내 소개"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/mypage_height"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="10dp"
+                                android:text="키DB"
+                                android:textColor="@color/main"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:id="@+id/mypage_job"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="10dp"
+                                android:text="직업DB"
+                                android:textColor="@color/main"
+                                android:textSize="15dp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:id="@+id/mypage_location"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="10dp"
+                                android:text="사는지역DB"
+                                android:textColor="@color/main"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:id="@+id/mypage_bloodtype"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="10dp"
+                                android:text="혈액형DB"
+                                android:textColor="@color/main"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:id="@+id/mypage_drinking"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="10dp"
+                                android:text="음주여부DB"
+                                android:textColor="@color/main"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:id="@+id/mypage_religion"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="10dp"
+                                android:text="종교DB"
+                                android:textColor="@color/main"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp">
+
+                            <TextView
+                                android:id="@+id/mypage_introduce"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:fontFamily="@font/nanumsquare_acr"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="10dp"
+                                android:text="나의소개DB"
+                                android:textColor="@color/main"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

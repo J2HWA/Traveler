@@ -1,0 +1,87 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+
+    android:id="@+id/review_item_linearlayout">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#AAFFFFFF"
+        android:layout_height="90dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/buttonbackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/reviewitem_profile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reviewitem_title"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nanumsquare_acb"
+            android:text="글 제목이 표시되는 부분"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reviewitem_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/nanumsquare_acl"
+            android:text="작성일시"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reviewitem_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:text="글쓴이"
+            app:layout_constraintStart_toEndOf="@+id/reviewitem_ratingbar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RatingBar
+            android:id="@+id/reviewitem_ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="56dp"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

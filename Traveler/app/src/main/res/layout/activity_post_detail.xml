@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    tools:context=".board.PostDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/postdetail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="@drawable/banner_main_line_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        <TextView
+            android:id="@+id/postdetail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:text="글 제목이 들어갈 부분"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/postdetail_toolbar" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/postdetail_bookbackground"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circle_line_mint"
+        app:layout_constraintEnd_toEndOf="@+id/postdetail_travelbook"
+        app:layout_constraintTop_toTopOf="@+id/postdetail_travelbook" />
+
+    <ImageView
+        android:id="@+id/postdetail_travelbook"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/book"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/postdetail_contents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postdetail_toolbar" />
+
+    <ImageView
+        android:id="@+id/postdetail_traveling"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/postdetail_bookbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/postdetail_contents"
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:background="@drawable/background_postdetail_contents_white"
+        android:fontFamily="@font/nanumsquare_acr"
+        android:inputType="textMultiLine"
+        android:paddingStart="20dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="20dp"
+        android:singleLine="false"
+        android:text="내용이 들어갈 부분"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/postdetail_profilebackground_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/postdetail_tag"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nanumsquare_acr"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="#태그가 들어갈 부분"
+        android:textColor="#01787C"
+        app:layout_constraintEnd_toEndOf="@+id/postdetail_contents"
+        app:layout_constraintStart_toStartOf="@+id/postdetail_contents"
+        app:layout_constraintTop_toTopOf="@+id/postdetail_contents" />
+
+    <ImageView
+        android:id="@+id/postdetail_profilebackground_left"
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:background="#55000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/postdetail_profile"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/mainicon"
+        app:layout_constraintBottom_toTopOf="@+id/postdetail_chat"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_grade2"
+        app:layout_constraintStart_toStartOf="@+id/mypage_grade2" />
+
+    <TextView
+        android:id="@+id/postdetail_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/nanumsquare_acr"
+        android:text="작성자 이름"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/postdetail_profilebackground_left"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/mypage_grade2"
+        app:layout_constraintTop_toTopOf="@+id/postdetail_profilebackground_left" />
+
+    <TextView
+        android:id="@+id/mypage_grade2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#2be0d0"
+        android:fontFamily="@font/nanumsquare_acr"
+        android:gravity="center_horizontal"
+        android:paddingTop="3dp"
+        android:text="회원 등급"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/postdetail_profile"
+        app:layout_constraintStart_toStartOf="@+id/postdetail_chat" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-31dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="0dp" />
+
+    <RatingBar
+        android:id="@+id/post_ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/postdetail_chat"
+        app:layout_constraintEnd_toStartOf="@+id/post_detali_score"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toEndOf="@+id/postdetail_profile" />
+
+    <TextView
+        android:id="@+id/post_detali_score"
+        android:layout_width="70dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/nanumsquare_acr"
+        android:gravity="center"
+        android:text="평점 5.0 입니다"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/post_ratingBar"
+        app:layout_constraintEnd_toEndOf="@+id/postdetail_profilebackground_left"
+        app:layout_constraintTop_toTopOf="@+id/post_ratingBar" />
+
+    <ImageView
+        android:id="@+id/postdetail_chat"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/chatildaeil_long_mint_full"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/postdetail_travelbook_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="트래블 북 제목이 들어가야 할 부분"
+        app:layout_constraintBottom_toTopOf="@+id/postdetail_tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postdetail_travelbook" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:text="신고하기"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:background="@drawable/banner_main"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="해당 유저를 신고하시겠습니까?"
+            android:textColor="@color/main"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:layout_margin="5dp"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_marginEnd="2dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonbackground_line_main_white_short"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:textColor="@color/main"
+            android:text="확인" />
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_marginStart="2dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonbackground_line_main_white_short"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:textColor="@color/main"
+            android:text="취소" />
+
+    </LinearLayout>
+</LinearLayout>

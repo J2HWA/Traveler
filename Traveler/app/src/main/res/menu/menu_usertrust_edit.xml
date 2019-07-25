@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_travel"
+        android:title="여행하기" />
+
+    <item
+        android:id="@+id/action_good"
+        android:title="칭찬하기"
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/action_fire"
+        android:title="신고하기"
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/action_exit"
+        android:title="채팅방 나가기" />
+</menu>
